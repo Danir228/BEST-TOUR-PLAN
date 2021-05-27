@@ -9,7 +9,7 @@ const Loader = () => {
   return (
     <div className="loader" style={{height: `${Height}`}}>
       <img className="loader__spinner" src={loader_image} />
-      <strong>Идет загрузка...</strong>
+      <strong className="loader__text">Идет загрузка...</strong>
     </div>
   );
 };
