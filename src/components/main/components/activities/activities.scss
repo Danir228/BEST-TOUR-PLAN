@@ -1,0 +1,33 @@
+.activities {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media(max-width: 1200px) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        color: #000000;
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

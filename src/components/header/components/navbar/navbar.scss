@@ -1,0 +1,237 @@
+.navbar {
+    &__items {
+        position: relative;
+        height: 120px;
+        // overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // @media(max-width: 1200px) {
+        //     justify-content: center;
+        // }
+
+        .active {
+            transform: translate(0, 70%);
+            opacity: 1;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 1200px) {
+            margin: 0 30px 0 0;
+        }
+
+        @media(max-width: 768px) {
+            margin: 0 50px 0 0;
+        }
+
+        @media(max-width: 480px) {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 350px;
+            height: 40px;
+            border: none;
+            outline: none;
+
+            background: #F5FAFE;
+            border-radius: 6px;
+            margin: 0 0 0 108px;
+
+            @media(max-width: 1200px) {
+                width: 200px;
+                height: 35px;
+                margin: 0 0 0 58px;
+            }
+
+            @media(max-width: 768px) {
+                width: 0;
+                height: 0;
+                margin: 0 0 0 20px;
+            }
+        }
+
+        button {
+            width: 65px;
+            height: 40px;
+            border: none;
+            background: red;
+            border-radius: 0 5px 5px 0;
+
+            @media(max-width: 1200px) {
+                width: 60px;
+                height: 36px;
+            }
+
+            @media(max-width: 768px) {
+                border-radius: 5px;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        @media(max-width: 1200px) {
+            font-size: 18px;
+        }
+
+        @media(max-width: 922px) {
+            max-width: 55px;
+            text-align: center;
+        }
+    }
+
+    &__heading_item {
+        color: red;
+    }
+
+    &__shop {
+        position: relative;
+        cursor: pointer;
+
+        @media(max-width: 1200px) {
+            margin: 0 30px 0 0;
+        }
+
+        @media(max-width: 580px) {
+            margin: 0 10px 0 0;
+        }
+
+        img {
+            transition: opacity .5s linear;
+
+            &:hover,
+            :focus {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__shop_current {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #EC1F46;
+    }
+
+    &__shop_length {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 13px;
+        color: #ffffff;
+    }
+
+    &__user {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 1200px) {
+            margin: 0 0 0 30px;
+        }
+
+        @media(max-width: 480px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            // min-width: 60px;
+            margin: 0 0 0 10px;
+        }
+    }
+
+    &__user_name {
+        margin: 0 24px 0 18px;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__user_arrow {
+        cursor: pointer;
+
+        @media(max-width: 480px) {
+            position: absolute;
+            right: 0;
+        }
+
+        &:hover {
+            transform: translate(0, 15%);
+            opacity: 0.7;
+        }
+    }
+
+
+    &__user_menu {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: fit-content;
+        padding-bottom: 5px;
+
+        transition: transform 1s ease, opacity 1.5s ease;
+        transform: translate(0, -200%);
+        opacity: 0;
+
+        background: #ffffff;
+        border: .5px solid #000;
+        border-radius: 3px;
+
+        ul {
+            li {
+                list-style-type: none;
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+
+        }
+    }
+
+    &__user_content {
+        position: relative;
+        padding: 10px 0 0 5px;
+
+        .fa-times {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            color: red;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+}

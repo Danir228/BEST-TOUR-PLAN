@@ -1,0 +1,125 @@
+.booking {
+    width: 350px;
+    height: fit-content;
+    margin: 0 0 27px 0;
+    text-align: center;
+    background: #0A223D;
+    border-radius: 8px;
+    color: #fff;
+
+    @media(max-width: 1200px) {
+        margin: 20px 15px 0 0;
+    }
+
+    @media(max-width: 1200px) {
+        margin: 20px 0 0 0;
+    }
+
+    @media(max-width: 480px) {
+        width: 300px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 29px 20px 9px 20px;
+
+        @media(max-width: 480px) {
+            margin: 29px 10px 9px 10px;
+        }
+    }
+
+    &__left {
+        text-align: left;
+    }
+
+    &__text {
+        margin: 3px 0 3px 0;
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    &__price {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    &__right {}
+
+    &__right_item {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+            margin: 0 0 8px 0;
+        }
+    }
+
+    &__user, &__home, &__phone {
+        width: 14px;
+        height: 14px;
+        margin: 0 9px 0 0;
+    }
+
+    &__user_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 9px 20px 17px 20px;
+
+        @media(max-width: 480px) {
+            margin: 9px 10px 17px 10px;
+        }
+    }
+
+    &__center_text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__center_item {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__booking_phone {
+        margin-right: 9px;
+    }
+
+    &__button {
+        width: 295px;
+        height: 45px;
+        margin: 0 20px 26px 20px;
+
+        @media(max-width: 480px) {
+            width: 270px;
+            margin: 0 10px 26px 10px;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}

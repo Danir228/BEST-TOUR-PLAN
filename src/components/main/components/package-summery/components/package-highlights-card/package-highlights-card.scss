@@ -1,0 +1,28 @@
+.packagehighlights_items {
+
+    .carddetails_items {
+        width: 479px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 150px;
+        margin: 27px 0 27px 0;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+            margin: 0 0 30px;
+        }
+        .carddetails_subtitle {
+            display: none;
+        }
+
+        .highlights {
+            &:first-child {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+
+}

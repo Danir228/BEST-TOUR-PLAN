@@ -1,0 +1,70 @@
+.new_sletter {
+    background: url('./images/sletter_bg.svg') center no-repeat;
+
+    background-size: cover;
+
+    &__wrapper {
+        background-color: rgba(10, 34, 61, 0.8);
+    }
+
+    &__container {
+        max-width: 731px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 97px 0 87px 0;
+        color: #fff;
+
+        @media(max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-style: normal;
+
+        &:first-child {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &:last-child {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 45px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__inputs {
+        input {
+            height: 55px;
+            border: none;
+        }
+    }
+
+    &__input {
+        width: 285px;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+        padding: 0 0 0 33px;
+
+        @media(max-width: 767px) {
+            max-width: 180px;
+        }
+    }
+
+    &__submit {
+        width: 65px;
+        padding: 0;
+        background: #EC1F46;
+        border-radius: 0px 4px 4px 0px;
+    }
+}

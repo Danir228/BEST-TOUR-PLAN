@@ -1,0 +1,99 @@
+.about_us_slider {
+    &__item {
+        // position: relative;
+        display: flex;
+        justify-content: center;
+        height: 325px;
+    }
+
+    &__wrapper {
+        width: 731px;
+        height: 280px;
+        margin: 45px 0 0 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 767px) {
+            max-width: 500px;
+            padding: 10px;
+        }
+    }
+
+    &__container {
+        max-width: 537px;
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width: 767px) {
+            position: relative;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: 0;
+        transform: translateX(250%);
+
+        @media(max-width: 767px) {
+            left: 0;
+            top: 0;
+            transform: none;
+        }
+    }
+
+    &__name {
+        margin: 54px 0 0 0;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #EC1F46;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 767px) {
+            margin: 10px 0 0 30px;
+        }
+    }
+
+
+    &__date {
+        margin: 10px 0 0 0;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+
+        @media(max-width: 767px) {
+            margin: 10px 0 0 30px;
+        }
+    }
+
+    &__stars {
+        margin: 4px 0 0 0;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 767px) {
+            margin: 10px 0 0 30px;
+        }
+    }
+
+    &__text {
+        margin: 32px 0 0 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 160%;
+
+        text-align: justify;
+    }
+}

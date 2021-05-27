@@ -1,0 +1,145 @@
+.advisor_card {
+    position: relative;
+    width: 100%;
+    max-width: 730px;
+    height: 500px;
+    margin: 20px 20px 0 0;
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    flex: 50%;
+
+    background-color: #0A223D;
+
+    transition: max-width .5s ease-out;
+
+    &__image_wrapper {
+        width: 366px;
+        position: relative;
+    }
+
+    &__button1 {
+        position: absolute;
+        width: 95px;
+        height: 30px;
+        left: 0;
+        top: 26px;
+
+        span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+    }
+
+    &__information {
+        position: relative;
+        width: 364px;
+        margin: 46px 21px 30px 44px;
+
+        color: #ffffff;
+        transition: all 0s linear;
+
+        @media(max-width: 767px) {
+            margin: 46px 15px 15px 15px;
+        }
+    }
+
+    &__footer {
+        margin: 37px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__old_price {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+
+        text-decoration-line: line-through;
+    }
+
+    &__new_price {
+        margin: 5px 0 0 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__booknow {
+        position: absolute;
+        width: 120px;
+        height: 40px;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__header {
+
+    }
+
+    &__stars {
+        display: flex;
+        width: 48px;
+        height: 8px;
+    }
+
+    &__star {
+        margin: 0 2px 0 0;
+
+        &:last-child {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__title {
+        height: 23px;
+        margin: 5px 0 0 0;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &__body {
+        .advisor_card__text {
+            height: 165px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160.6%;
+        }
+    }
+
+    &__room {
+        margin: 34px 0 0 0;
+    }
+
+    &__room_item {
+        display: flex;
+        align-items: center;
+        margin: 0 0 14px 0;
+
+        &:last-child {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__room_image {
+        width: 14px;
+        height: 14px;
+        margin: 0 14px 0 0;
+    }
+
+    &__room_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

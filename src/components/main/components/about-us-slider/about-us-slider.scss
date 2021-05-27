@@ -1,0 +1,18 @@
+.about_us_slider {
+    margin: 70px 0 70px 0;
+    padding: 40px 0 0 0;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0 0 70px 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

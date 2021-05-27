@@ -1,0 +1,26 @@
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin: 139px 0 0 0;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 64px;
+        text-transform: uppercase;
+
+        @media(max-width: 767px) {
+            margin: 50px 0 0 0;
+        }
+    }
+
+    &__title_item {
+        color: #EC1F46;
+    }
+}

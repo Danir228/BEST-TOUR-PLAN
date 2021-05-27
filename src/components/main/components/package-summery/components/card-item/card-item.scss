@@ -1,0 +1,27 @@
+.carddetails_items {
+    h3 {
+        margin: 0 0 21px 0;
+    }
+
+    .carddetails_item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0 10px 0;
+
+        &:last-child {
+            margin: 10px 0 0 0;
+        }
+
+        img {
+            margin-right: 21px;
+        }
+
+        strong {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #333333;
+        }
+    }
+}

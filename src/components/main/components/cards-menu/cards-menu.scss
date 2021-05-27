@@ -1,0 +1,44 @@
+.cardsmenu {
+    height: 35px;
+    margin: 67px 0 40px 0;
+
+    @media(max-width: 1024px) {
+        height: 100%;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 1024px) {
+            height: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+        margin: 0 10px 0 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        padding-bottom: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #000;
+        transition: border-bottom .15s linear;
+
+        &:hover {
+            color: #EC1F46;
+            border-bottom: 4px solid #EC1F46;
+        }
+    }
+}
